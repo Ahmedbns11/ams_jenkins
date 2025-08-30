@@ -5,17 +5,7 @@ pipeline {
     agent any
     stages {
         stage('Salutation à tout le monde devops') {
-            steps {
-                echo 'Bonjour tout le monde'
-            }
-        }
-        stage('Début du pipeline ...') {
-            steps {
-                echo 'Chargement'
-            }
-        }
-        stage('Création image Docker') {
-            steps {
+@@ -19,28 +16,6 @@ pipeline {
                 sh 'docker build -t mezghich_ams_2024 .'
             }
         }
@@ -43,4 +33,3 @@ pipeline {
         }
     }
 }
-
