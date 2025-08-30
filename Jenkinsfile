@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Salutation à tout le monde devops') {
             steps {
-                echo 'Bonjour '
+                echo 'hello '
             }
         }
         stage('Début du pipeline ...') {
